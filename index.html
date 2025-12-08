@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Science 8 - Natural History Study Guide</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap"
+        rel="stylesheet">
     <style>
         :root {
             --bg-primary: #0d1117;
@@ -374,8 +377,15 @@
         }
 
         @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.5; }
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
         }
 
         .quiz-question {
@@ -646,6 +656,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="noise-overlay"></div>
     <div class="gradient-orb orb-1"></div>
@@ -656,7 +667,8 @@
             <div class="badge">Science 8 • Test 2</div>
             <h1>Natural History</h1>
             <p class="subtitle">Study Guide &amp; Interactive Quiz</p>
-            <a href="https://quizlet.com/1118236469/science-8-test-2-flash-cards/" target="_blank" rel="noopener" class="quizlet-link">
+            <a href="https://quizlet.com/1118236469/science-8-test-2-flash-cards/" target="_blank" rel="noopener"
+                class="quizlet-link">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                     <polyline points="15 3 21 3 21 9"></polyline>
@@ -677,6 +689,7 @@
             <button class="nav-btn active" data-mode="study">Study Cards</button>
             <button class="nav-btn" data-mode="quiz">Quiz Me</button>
             <button class="nav-btn" data-mode="browse">Browse All</button>
+            <button class="nav-btn" data-mode="quizlet">Quizlet</button>
         </nav>
 
         <!-- Study Mode -->
@@ -735,20 +748,23 @@
         <!-- Quiz Mode -->
         <section id="quiz-mode">
             <div class="quiz-header">
-                <div class="quiz-progress">Question <span id="quiz-current">1</span> of <span id="quiz-total">19</span></div>
+                <div class="quiz-progress">Question <span id="quiz-current">1</span> of <span id="quiz-total">19</span>
+                </div>
                 <div class="ai-indicator" id="ai-indicator">
                     <span class="ai-dot"></span>
                     <span id="ai-status">AI Checking</span>
                 </div>
                 <div class="quiz-score">
                     <div class="score-item score-correct">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
                             <polyline points="20 6 9 17 4 12"></polyline>
                         </svg>
                         <span id="correct-count">0</span>
                     </div>
                     <div class="score-item score-wrong">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
                             <line x1="18" y1="6" x2="6" y2="18"></line>
                             <line x1="6" y1="6" x2="18" y2="18"></line>
                         </svg>
@@ -769,12 +785,14 @@
                     <div class="correct-answer" id="correct-answer-box"></div>
                 </div>
 
-                <textarea class="quiz-input" id="quiz-answer" placeholder="Type your answer here..." rows="3"></textarea>
+                <textarea class="quiz-input" id="quiz-answer" placeholder="Type your answer here..."
+                    rows="3"></textarea>
 
                 <div class="quiz-actions">
                     <button class="quiz-btn quiz-btn-secondary" id="show-answer-btn">Show Answer</button>
                     <button class="quiz-btn quiz-btn-primary" id="check-answer-btn">Check Answer</button>
-                    <button class="quiz-btn quiz-btn-primary" id="next-question-btn" style="display: none;">Next Question</button>
+                    <button class="quiz-btn quiz-btn-primary" id="next-question-btn" style="display: none;">Next
+                        Question</button>
                 </div>
             </div>
 
@@ -802,6 +820,23 @@
         <!-- Browse Mode -->
         <section id="browse-mode">
             <div class="card-grid" id="card-grid"></div>
+        </section>
+
+        <!-- Quizlet Mode -->
+        <section id="quizlet-mode" style="display: none;">
+            <div class="quizlet-controls"
+                style="margin-bottom: 2rem; display: flex; justify-content: center; gap: 0.5rem; flex-wrap: wrap;">
+                <button class="nav-btn active" data-quizlet-mode="match">Match</button>
+                <button class="nav-btn" data-quizlet-mode="learn">Learn</button>
+                <button class="nav-btn" data-quizlet-mode="flashcards">Flashcards</button>
+                <button class="nav-btn" data-quizlet-mode="test">Test</button>
+                <button class="nav-btn" data-quizlet-mode="spell">Spell</button>
+            </div>
+            <div class="quizlet-container"
+                style="border-radius: 12px; overflow: hidden; border: 1px solid var(--border); background: var(--bg-card);">
+                <iframe id="quizlet-iframe" src="https://quizlet.com/1118236469/match/embed?i=6rud4j&x=1jj1"
+                    height="500" width="100%" style="border:0"></iframe>
+            </div>
         </section>
     </div>
 
@@ -876,6 +911,7 @@
                 document.getElementById('study-mode').style.display = mode === 'study' ? 'block' : 'none';
                 document.getElementById('quiz-mode').style.display = mode === 'quiz' ? 'block' : 'none';
                 document.getElementById('browse-mode').style.display = mode === 'browse' ? 'block' : 'none';
+                document.getElementById('quizlet-mode').style.display = mode === 'quizlet' ? 'block' : 'none';
 
                 if (mode === 'quiz') initQuiz();
                 if (mode === 'browse') renderBrowse();
@@ -1015,7 +1051,7 @@ Respond in this exact JSON format only, no other text:
 
             const data = await response.json();
             const text = data.candidates[0].content.parts[0].text;
-            
+
             // Parse JSON from response (handle potential markdown code blocks)
             const jsonMatch = text.match(/\{[\s\S]*\}/);
             if (jsonMatch) {
@@ -1028,7 +1064,7 @@ Respond in this exact JSON format only, no other text:
             if (answered) return;
 
             const userAnswer = quizAnswer.value.trim();
-            
+
             if (!userAnswer) {
                 alert('Please enter an answer first!');
                 return;
@@ -1073,22 +1109,22 @@ Respond in this exact JSON format only, no other text:
         function fallbackCheck() {
             const userAnswer = quizAnswer.value.toLowerCase().trim();
             const correctAnswer = quizCards[quizIndex].a.toLowerCase();
-            
+
             const userWords = userAnswer.split(/\s+/).filter(w => w.length > 3);
             const correctWords = correctAnswer.split(/\s+/).filter(w => w.length > 3);
-            
+
             let matchCount = 0;
             userWords.forEach(word => {
                 if (correctWords.some(cw => cw.includes(word) || word.includes(cw))) {
                     matchCount++;
                 }
             });
-            
+
             const matchRatio = correctWords.length > 0 ? matchCount / correctWords.length : 0;
             const isCorrect = matchRatio >= 0.4;
-            
-            showFeedback(isCorrect, isCorrect ? 
-                'Your answer covers the key concepts!' : 
+
+            showFeedback(isCorrect, isCorrect ?
+                'Your answer covers the key concepts!' :
                 'Your answer was missing some key concepts. Compare with the correct answer below.');
         }
 
@@ -1168,27 +1204,45 @@ Respond in this exact JSON format only, no other text:
             `).join('');
         }
 
-        // API Key Button
-        document.getElementById('api-key-btn').addEventListener('click', () => {
-            const currentKey = geminiApiKey ? '(key is set)' : '(no key set)';
-            const key = prompt(`Enter your Gemini API Key for AI-powered answer checking.\n\nCurrent status: ${currentKey}\n\nGet a free key at: https://aistudio.google.com/app/apikey\n\nLeave blank and click OK to clear the existing key.`);
-            
-            if (key === null) return; // User clicked cancel
-            
-            if (key.trim()) {
-                geminiApiKey = key.trim();
-                localStorage.setItem('gemini_api_key', geminiApiKey);
-                alert('API key saved! AI-powered checking is now enabled.');
-            } else {
-                geminiApiKey = '';
-                localStorage.removeItem('gemini_api_key');
-                alert('API key cleared. Basic checking will be used.');
-            }
-            updateAiIndicator();
+        // Quizlet Mode Functions
+        document.querySelectorAll('[data-quizlet-mode]').forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Update active state of buttons
+                document.querySelectorAll('[data-quizlet-mode]').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                // Update iframe source
+                const mode = btn.dataset.quizletMode;
+                const iframe = document.getElementById('quizlet-iframe');
+                iframe.src = `https://quizlet.com/1118236469/${mode}/embed?i=6rud4j&x=1jj1`;
+            });
         });
+
+        // API Key Button
+        const apiKeyBtn = document.getElementById('api-key-btn');
+        if (apiKeyBtn) {
+            apiKeyBtn.addEventListener('click', () => {
+                const currentKey = geminiApiKey ? '(key is set)' : '(no key set)';
+                const key = prompt(`Enter your Gemini API Key for AI-powered answer checking.\n\nCurrent status: ${currentKey}\n\nGet a free key at: https://aistudio.google.com/app/apikey\n\nLeave blank and click OK to clear the existing key.`);
+
+                if (key === null) return; // User clicked cancel
+
+                if (key.trim()) {
+                    geminiApiKey = key.trim();
+                    localStorage.setItem('gemini_api_key', geminiApiKey);
+                    alert('API key saved! AI-powered checking is now enabled.');
+                } else {
+                    geminiApiKey = '';
+                    localStorage.removeItem('gemini_api_key');
+                    alert('API key cleared. Basic checking will be used.');
+                }
+                updateAiIndicator();
+            });
+        }
 
         // Initialize
         updateCard();
     </script>
 </body>
+
 </html>
