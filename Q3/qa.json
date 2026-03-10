@@ -1,0 +1,114 @@
+[
+    {
+        "q": "What are the layers of the Earth's atmosphere?",
+        "a": "The layers of the Earth's atmosphere are the Troposphere, Stratosphere, Mesosphere, Thermosphere, and Exosphere."
+    },
+    {
+        "q": "What are the characteristics of the Troposphere?",
+        "a": "The Troposphere is the lowest layer of the atmosphere, where weather occurs, and temperature decreases with altitude."
+    },
+    {
+        "q": "What are the characteristics of the Stratosphere?",
+        "a": "The Stratosphere contains the ozone layer, temperature increases with altitude, and is where commercial jets fly."
+    },
+    {
+        "q": "What are the characteristics of the Mesosphere?",
+        "a": "The Mesosphere is where temperature decreases with altitude and is the layer where meteors burn up upon entering the atmosphere."
+    },
+    {
+        "q": "What are the characteristics of the Thermosphere?",
+        "a": "The Thermosphere is characterized by very high temperatures and is where the auroras occur."
+    },
+    {
+        "q": "What are the characteristics of the Exosphere?",
+        "a": "The Exosphere is the outermost layer of the atmosphere, where air is thin and satellites orbit the Earth."
+    },
+    {
+        "q": "What is a scaling factor?",
+        "a": "A scaling factor is a number that scales, or multiplies, a quantity to increase or decrease its size."
+    },
+    {
+        "q": "What is NASA's James Webb Space Telescope?",
+        "a": "NASA's James Webb Space Telescope is a space telescope designed to observe the universe in infrared wavelengths."
+    },
+    {
+        "q": "How is the JWST different from other telescopes?",
+        "a": "The JWST is optimized for infrared observation, has a larger mirror than previous telescopes, and can observe distant galaxies and exoplanets."
+    },
+    {
+        "q": "What are stars made of?",
+        "a": "Stars are primarily made of hydrogen and helium, with trace amounts of other elements."
+    },
+    {
+        "q": "What is the main chemical reaction that takes place in the center of stars?",
+        "a": "The main chemical reaction in stars is nuclear fusion, where hydrogen nuclei combine to form helium, releasing energy."
+    },
+    {
+        "q": "What is the life cycle of a low mass star?",
+        "a": "A low mass star goes from main sequence to red giant, then to a planetary nebula, and finally becomes a white dwarf."
+    },
+    {
+        "q": "What is the life cycle of a high mass star?",
+        "a": "A high mass star evolves from main sequence to red supergiant, then undergoes a supernova explosion, and can become a neutron star or black hole."
+    },
+    {
+        "q": "What is the electromagnetic spectrum (EMS)?",
+        "a": "The electromagnetic spectrum is the range of all types of electromagnetic radiation, from radio waves to gamma rays."
+    },
+    {
+        "q": "What are the types of radiation in the EMS?",
+        "a": "The types of radiation in the EMS include radio waves, microwaves, infrared, visible light, ultraviolet, X-rays, and gamma rays."
+    },
+    {
+        "q": "What is frequency in waves?",
+        "a": "Frequency is the number of waves that pass a point in one second, measured in hertz (Hz)."
+    },
+    {
+        "q": "What is the difference between high and low frequency waves?",
+        "a": "High frequency waves have shorter wavelengths and more energy, while low frequency waves have longer wavelengths and less energy."
+    },
+    {
+        "q": "What is wavelength in waves?",
+        "a": "Wavelength is the distance between successive crests of a wave, typically measured in meters."
+    },
+    {
+        "q": "What is the life cycle of the Sun?",
+        "a": "The Sun's life cycle includes its formation from a nebula, its main sequence phase, expansion into a red giant, and eventual transformation into a white dwarf."
+    },
+    {
+        "q": "What are the parts of the Sun?",
+        "a": "The parts of the Sun include the core, radiative zone, convective zone, photosphere, chromosphere, and corona."
+    },
+    {
+        "q": "What is solar wind?",
+        "a": "Solar wind is a stream of charged particles released from the upper atmosphere of the Sun, primarily electrons and protons."
+    },
+    {
+        "q": "What are sunspots?",
+        "a": "Sunspots are temporary phenomena on the Sun's photosphere that appear as spots darker than the surrounding areas, caused by magnetic activity."
+    },
+    {
+        "q": "What are coronal mass ejections (CMEs)?",
+        "a": "CMEs are large expulsions of plasma and magnetic field from the Sun's corona that can affect space weather and Earth's magnetosphere."
+    },
+    {
+        "q": "What is NASA's Parker Solar Probe?",
+        "a": "NASA's Parker Solar Probe is a spacecraft designed to study the Sun's outer atmosphere and solar wind by flying close to the Sun."
+    },
+    {
+        "q": "How does Earth orbit the Sun?",
+        "a": "Earth orbits the Sun in an elliptical path due to the gravitational pull of the Sun, completing one orbit approximately every 365.25 days."
+    },
+    {
+        "q": "How does the Moon orbit Earth?",
+        "a": "The Moon orbits Earth in an elliptical path, completing one orbit approximately every 27.3 days, which causes phases of the Moon."
+    },
+    {
+        "q": "What causes the Earth's seasons?",
+        "a": "The Earth's seasons are caused by the tilt of its axis and its orbit around the Sun, affecting the angle and duration of sunlight received."
+    },
+    {
+        "q": "How does a lunar eclipse happen?",
+        "a": "A lunar eclipse occurs when the Earth passes between the Sun and the Moon, causing the Earth's shadow to cover the Moon."
+    }
+]
